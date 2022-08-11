@@ -25,7 +25,7 @@ body {
 
 .global-container {
     display: grid;
-    grid-template-columns: minmax(250px, 1fr) 4fr;
+    grid-template: 200px 1fr / minmax(250px, 1fr) 4fr;
 }
 
 /* ====== */
@@ -121,8 +121,6 @@ body {
     gap: var(--gap);
 }
 
-
-/* CSS */
 .btns-container button {
     background-color: var(--primary-color);
     color: var(--accent-bg-color);
@@ -149,6 +147,52 @@ body {
     background-color: var(--primary-color);
     color: var(--accent-bg-color);
     padding: var(--gap);
+    display: grid;
+    gap: calc(var(--gap) * 2.5);
+}
+
+.sidebar .dashboard {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: var(--gap);
+}
+
+.sidebar .dashboard img {
+    width: 50px;
+    height: 50px;
+    color: var(--accent-bg-color);
+}
+
+.sidebar .dashboard span {
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+.sidebar>div>div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: var(--gap);
+    padding: 5px;
+    margin-bottom: var(--gap);
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.sidebar>div>div:hover {
+    background-color: var(--accent-color);
+    transition: .2s;
+}
+
+.sidebar-sm-icon {
+    width: 28px;
+    height: 28px;
+}
+
+.sidebar>div>div>span {
+    font-size: 1.3rem;
+    font-weight: bold;
 }
 
 /* =========== */
