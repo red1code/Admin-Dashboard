@@ -1,4 +1,4 @@
-You can preview Dashboard here: https://red1code.github.io/Admin-Dashboard/
+Live preview URL: https://red1code.github.io/Admin-Dashboard/
 
 # Description
 
